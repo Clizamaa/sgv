@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center p-4">
+    <div className="flex min-h-screen items-center justify-center p-4 bg-[#06193b] bg-[url('/bg-cars.png')] bg-cover bg-center bg-fixed">
       <div className="w-full max-w-md rounded-[2rem] border border-white/20 bg-white/10 p-10 shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] backdrop-blur-xl">
         <div className="mb-8 text-center">
           <h1 className="mb-2 text-4xl font-bold tracking-tight text-white">Gestión de Vehículos</h1>
@@ -40,7 +40,7 @@ export default function Home() {
 
           </div>
 
-          <Link href="/dashboard">
+          <Link href="/panel">
             <button
               type="submit"
               className="w-full py-3.5 px-4 bg-white text-gray-900 font-semibold rounded-xl shadow-[0_4px_14px_0_rgba(255,255,255,0.39)] hover:shadow-[0_6px_20px_rgba(255,255,255,0.23)] hover:bg-opacity-90 transition transform hover:-translate-y-0.5"
