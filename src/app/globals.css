@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@theme {
+  --color-corporate-bg: #f8fafc;
+  --color-corporate-surface: #ffffff;
+  --color-corporate-border: #e2e8f0;
+  --color-corporate-text: #0f172a;
+  --color-corporate-text-muted: #64748b;
+  --color-corporate-primary: #1D357F; /* Kit Digital Dark Blue */
+  --color-corporate-primary-hover: #11235A;
+  --color-corporate-accent: #E31837; /* Kit Digital Red */
+}
+
+@layer base {
+  body {
+    background-color: var(--color-corporate-bg);
+    color: var(--color-corporate-text);
+  }
+}
