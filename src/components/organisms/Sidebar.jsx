@@ -2,12 +2,13 @@
 
 import React from 'react';
 import { NavItem } from '../molecules/NavItem';
-import { LayoutDashboard, Calendar, Settings, Database } from 'lucide-react';
+import { LayoutDashboard, Calendar, Database } from 'lucide-react';
 import { Text } from '../atoms/Text';
 
 export const Sidebar = ({ currentPath = '/panel' }) => {
   const navLinks = [
     { label: 'Dashboard', icon: LayoutDashboard, path: '/panel' },
+    { label: 'Reservas', icon: Calendar, path: '/panel/reservas' },
     {
       label: 'Mantenedor',
       icon: Database,
@@ -15,9 +16,7 @@ export const Sidebar = ({ currentPath = '/panel' }) => {
         { label: 'Vehículos', path: '/panel/vehiculos', isActive: currentPath === '/panel/vehiculos' },
         { label: 'Conductores', path: '/panel/conductores', isActive: currentPath === '/panel/conductores' }
       ]
-    },
-    { label: 'Reservas', icon: Calendar, path: '/panel/reservas' },
-    { label: 'Configuración', icon: Settings, path: '/panel/configuracion' },
+    }
   ];
 
   return (
